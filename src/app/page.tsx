@@ -14,24 +14,25 @@ import Closing from '@/components/Closing'
 import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 import FloatingCTA from '@/components/FloatingCTA'
+import RevealSection from '@/components/RevealSection'
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden pb-20 sm:pb-0">
       <Navbar />
       <Hero />
-      <ForWho />
-      <Testimonials />
-      <Promise />
-      <ProblemSolution />
-      <About />
-      <Benefits />
-      <Modules />
-      <Methodology />
-      <Bonuses />
-      <Pricing />
-      <Closing />
-      <FAQ />
+      <RevealSection><ForWho /></RevealSection>
+      <RevealSection><Testimonials /></RevealSection>
+      <RevealSection><Promise /></RevealSection>
+      <RevealSection><ProblemSolution /></RevealSection>
+      <RevealSection><About /></RevealSection>
+      <RevealSection><Benefits /></RevealSection>
+      <RevealSection><Modules /></RevealSection>
+      <RevealSection><Methodology /></RevealSection>
+      <RevealSection><Bonuses /></RevealSection>
+      <RevealSection><Pricing /></RevealSection>
+      <RevealSection><Closing /></RevealSection>
+      <RevealSection><FAQ /></RevealSection>
       <Footer />
       <FloatingCTA />
     </main>

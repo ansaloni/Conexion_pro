@@ -9,11 +9,26 @@ import { whatsappUrl, cn } from '@/lib/utils'
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handler, { passive: true })
     return () => window.removeEventListener('scroll', handler)
+  }, [])
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section[id]')
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveSection(entry.target.id)
+        })
+      },
+      { threshold: 0.3, rootMargin: '-15% 0px -60% 0px' }
+    )
+    sections.forEach((s) => observer.observe(s))
+    return () => observer.disconnect()
   }, [])
 
   const handleNavClick = () => setOpen(false)
@@ -46,17 +61,31 @@ export default function Navbar() {
             </div>
           </a>
 
-          {/* Desktop nav links — hidden when scrolled for minimal sticky header */}
-          <nav className={cn('hidden lg:flex items-center gap-6 transition-all duration-300', scrolled && 'opacity-0 pointer-events-none')}>
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-medium text-white/80 hover:text-white transition-colors duration-200"
-              >
-                {link.label}
-              </a>
-            ))}
+          {/* Desktop nav links with scroll spy */}
+          <nav className="hidden lg:flex items-center gap-6">
+            {NAV_LINKS.map((link) => {
+              const isActive = activeSection === link.href.slice(1)
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className={cn(
+                    'text-sm font-medium transition-all duration-200 relative py-1',
+                    scrolled
+                      ? isActive ? 'text-brand font-semibold' : 'text-gray-600 hover:text-navy'
+                      : isActive ? 'text-gold font-semibold' : 'text-white/80 hover:text-white'
+                  )}
+                >
+                  {link.label}
+                  {isActive && (
+                    <span className={cn(
+                      'absolute -bottom-1 left-0 right-0 h-0.5 rounded-full',
+                      scrolled ? 'bg-brand' : 'bg-gold'
+                    )} />
+                  )}
+                </a>
+              )
+            })}
           </nav>
 
           {/* CTA + hamburger */}
@@ -94,7 +123,12 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={handleNavClick}
-                className="text-gray-700 hover:text-navy hover:bg-gray-50 font-medium px-4 py-3 rounded-lg transition-colors"
+                className={cn(
+                  'font-medium px-4 py-3 rounded-lg transition-colors',
+                  activeSection === link.href.slice(1)
+                    ? 'text-brand bg-brand/5 font-semibold'
+                    : 'text-gray-700 hover:text-navy hover:bg-gray-50'
+                )}
               >
                 {link.label}
               </a>
