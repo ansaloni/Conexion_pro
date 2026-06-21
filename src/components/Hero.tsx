@@ -36,10 +36,10 @@ export default function Hero() {
           {/* Bullets */}
           <ul className="space-y-3 mb-10">
             {[
-              { bold: 'Método C.O.N.E.X. + Comunicação Imediata', post: ' — treino aplicado, não teoria' },
+              { bold: 'Método C.O.N.E.X. + Comunicação Imediata', post: ' treino aplicado, não teoria' },
               { bold: 'Frases prontas', post: ' para atendimento, vendas, calls e reuniões' },
               { bold: 'Suporte VIP no WhatsApp', post: ' com acompanhamento personalizado' },
-              { bold: 'Resultado em 90 dias', post: ' — do nível atual à confiança profissional' },
+              { bold: 'Resultado em 90 dias', post: ' do nível atual à confiança profissional' },
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-white/90">
                 <CheckCircle2 className="text-gold flex-shrink-0 mt-0.5" size={20} />
