@@ -1,4 +1,4 @@
-import { CheckCircle2, MessageCircle, Star } from 'lucide-react'
+import { CheckCircle2, MessageCircle, Star, Calendar, Clock, MessageSquare, ShieldCheck } from 'lucide-react'
 import { PLANS } from '@/data/content'
 import { whatsappUrl, cn } from '@/lib/utils'
 
@@ -51,8 +51,8 @@ export default function Pricing() {
                   </span>
                 </div>
                 <div className={cn('mt-2 flex flex-col gap-1 text-sm', plan.highlight ? 'text-white/70' : 'text-gray-500')}>
-                  <span>📅 {plan.frequency}</span>
-                  <span>⏱ Duração estimada: {plan.commitment}</span>
+                  <span className="flex items-center gap-1.5"><Calendar size={14} /> {plan.frequency}</span>
+                  <span className="flex items-center gap-1.5"><Clock size={14} /> Duração estimada: {plan.commitment}</span>
                 </div>
               </div>
 
@@ -103,8 +103,8 @@ export default function Pricing() {
 
         {/* Reassurance */}
         <div className="text-center mt-10 text-gray-500 text-sm space-y-2">
-          <p>💬 Pagamento e agendamento combinados diretamente com a professora.</p>
-          <p>🔒 Negociação transparente — sem surpresas ou cobranças escondidas.</p>
+          <p className="flex items-center justify-center gap-2"><MessageSquare size={14} /> Pagamento e agendamento combinados diretamente com a professora.</p>
+          <p className="flex items-center justify-center gap-2"><ShieldCheck size={14} /> Negociação transparente — sem surpresas ou cobranças escondidas.</p>
         </div>
       </div>
     </section>

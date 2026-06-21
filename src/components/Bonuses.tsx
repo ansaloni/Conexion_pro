@@ -1,6 +1,10 @@
 import { BONUSES } from '@/data/content'
-import { Gift, MessageCircle } from 'lucide-react'
+import { Gift, MessageCircle, Calendar, BarChart3, BookOpen, FileText, Video, Linkedin, BookMarked, type LucideIcon } from 'lucide-react'
 import { whatsappUrl } from '@/lib/utils'
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  Calendar, BarChart3, BookOpen, FileText, Video, Linkedin, BookMarked,
+}
 
 export default function Bonuses() {
   return (
@@ -22,20 +26,25 @@ export default function Bonuses() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-10">
-          {BONUSES.map((bonus, i) => (
-            <div
-              key={i}
-              className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-colors duration-300"
-            >
-              <div className="text-3xl mb-3">{bonus.emoji}</div>
-              <h3 className="font-display font-bold text-white text-sm mb-2">{bonus.title}</h3>
-              <p className="text-white/60 text-xs leading-relaxed">{bonus.desc}</p>
-            </div>
-          ))}
+          {BONUSES.map((bonus, i) => {
+            const Icon = ICON_MAP[bonus.icon]
+            return (
+              <div
+                key={i}
+                className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition-colors duration-300"
+              >
+                <div className="mb-3 text-gold">
+                  {Icon && <Icon size={28} />}
+                </div>
+                <h3 className="font-display font-bold text-white text-sm mb-2">{bonus.title}</h3>
+                <p className="text-white/60 text-xs leading-relaxed">{bonus.desc}</p>
+              </div>
+            )
+          })}
 
           {/* "All bonuses included" teaser card */}
           <div className="bg-gold/20 border-2 border-gold/40 rounded-2xl p-5 flex flex-col items-center justify-center text-center">
-            <span className="text-3xl mb-3">🎁</span>
+            <Gift size={28} className="text-gold mb-3" />
             <p className="text-gold font-bold text-sm">
               Todos inclusos nos planos Essencial e Intensivo
             </p>

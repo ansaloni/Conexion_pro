@@ -29,22 +29,21 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
-            O <strong className="text-gold">Conexión Pro</strong> é o curso online de espanhol para profissionais
-            brasileiros que precisam usar o idioma no trabalho, com método prático, simulações reais e suporte
-            para você virar um <strong className="text-white">atendente bilíngue confiante</strong>.
+            Curso online com metodologia <strong className="text-gold">C.O.N.E.X.</strong> — simulações reais,
+            frases prontas e suporte individual para você se comunicar com confiança no mercado corporativo.
           </p>
 
           {/* Bullets */}
           <ul className="space-y-3 mb-10">
             {[
-              { pre: 'Método prático ', bold: 'C.O.N.E.X. + Comunicação Imediata', post: ' (nada de "espanhol de livro")' },
-              { pre: '', bold: 'Frases prontas + treino aplicado', post: ' para atendimento, suporte, vendas e reuniões' },
-              { pre: '', bold: 'Suporte VIP no WhatsApp', post: ' para dúvidas pontuais e acompanhamento' },
-              { pre: 'Para quem quer ', bold: 'dobrar oportunidades', post: ' e aumentar a renda com um diferencial real' },
+              { bold: 'Método C.O.N.E.X. + Comunicação Imediata', post: ' — treino aplicado, não teoria' },
+              { bold: 'Frases prontas', post: ' para atendimento, vendas, calls e reuniões' },
+              { bold: 'Suporte VIP no WhatsApp', post: ' com acompanhamento personalizado' },
+              { bold: 'Resultado em 90 dias', post: ' — do nível atual à confiança profissional' },
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-white/90">
                 <CheckCircle2 className="text-gold flex-shrink-0 mt-0.5" size={20} />
-                <span>{item.pre}<strong className="text-white">{item.bold}</strong>{item.post}</span>
+                <span><strong className="text-white">{item.bold}</strong>{item.post}</span>
               </li>
             ))}
           </ul>
@@ -58,7 +57,7 @@ export default function Hero() {
               className="btn-primary text-center"
             >
               <MessageCircle size={20} />
-              Quero me tornar bilíngue no trabalho
+              Quero destravar meu espanhol
             </a>
             <a href="#investimento" className="btn-ghost text-center">
               Ver planos e valores

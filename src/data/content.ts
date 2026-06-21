@@ -14,22 +14,18 @@ export const NAV_LINKS = [
 
 export const FOR_WHO_ITEMS = [
   {
-    emoji: '📞',
     title: 'Você trava na hora de falar com clientes em espanhol',
     pain: 'O medo de errar te faz falar menos — e isso te deixa ainda mais inseguro(a) a cada atendimento.',
   },
   {
-    emoji: '💼',
     title: 'Tem medo de perder oportunidades por não se comunicar',
     pain: 'Vagas com bonificação por bilinguismo, clientes LATAM e promoções passam por você por falta de confiança no idioma.',
   },
   {
-    emoji: '🌎',
     title: 'Sente dificuldade com sotaques da América Latina',
     pain: 'Chile, Argentina, México, Colômbia — cada país fala diferente, e você não sabe como se adaptar em tempo real.',
   },
   {
-    emoji: '📈',
     title: 'Já estudou, mas não consegue aplicar no dia a dia',
     pain: 'Você sabe a gramática, mas na hora do atendimento real, a mente congela e as frases não saem.',
   },
@@ -115,37 +111,37 @@ export const LEARN_ITEMS = [
 
 export const BONUSES = [
   {
-    emoji: '📅',
+    icon: 'Calendar',
     title: 'Planner de Estudos C.O.N.E.X.',
     desc: 'Rotina de estudos em apenas 30 minutos por dia, focada no que traz retorno direto para o trabalho.',
   },
   {
-    emoji: '📊',
+    icon: 'BarChart3',
     title: 'Planilha de Progresso Semanal',
     desc: 'Acompanhe sua evolução semana a semana com métricas claras e celebre cada conquista.',
   },
   {
-    emoji: '📖',
+    icon: 'BookOpen',
     title: 'Mini eBook: "Frases que Vendem"',
     desc: 'Scripts prontos para abrir, conduzir e fechar conversas de vendas em espanhol.',
   },
   {
-    emoji: '🔤',
+    icon: 'FileText',
     title: 'Glossário: Falsos Cognatos Corporativos',
     desc: 'Evite os erros mais comuns que brasileiros cometem com palavras que parecem iguais, mas não são.',
   },
   {
-    emoji: '🎥',
+    icon: 'Video',
     title: 'Gravações das Aulas Práticas',
     desc: 'Acesso às gravações com anotações para revisitar sempre que precisar reforçar um conteúdo.',
   },
   {
-    emoji: '💡',
+    icon: 'Linkedin',
     title: 'Workshop: "LinkedIn Bilíngue de Impacto"',
     desc: 'Como posicionar seu perfil profissional em espanhol para atrair oportunidades internacionais.',
   },
   {
-    emoji: '📚',
+    icon: 'BookMarked',
     title: 'eBook de Espanhol Básico',
     desc: 'Material de reforço para iniciantes consolidarem a base antes de avançar no programa.',
   },
@@ -256,12 +252,12 @@ export const TESTIMONIALS = [
 ]
 
 export const COMPANY_SECTORS = [
-  '🌎 Comércio Exterior',
-  '🤝 Customer Success',
-  '📊 Vendas B2B',
-  '💻 Tecnologia',
-  '🏭 Indústria LATAM',
-  '👥 Recursos Humanos',
+  'Comércio Exterior',
+  'Customer Success',
+  'Vendas B2B',
+  'Tecnologia',
+  'Indústria LATAM',
+  'Recursos Humanos',
 ]
 
 export const ROADMAP_STEPS = [
@@ -269,24 +265,20 @@ export const ROADMAP_STEPS = [
     period: 'Semana 1–2',
     phase: 'Diagnóstico',
     desc: 'Avaliação de nível, fonética e vocabulário essencial',
-    icon: '🔍',
   },
   {
     period: 'Mês 1',
     phase: 'Base Bilíngue',
     desc: 'Atendimento, e-mails e primeiras simulações de calls',
-    icon: '🌱',
   },
   {
     period: 'Mês 2',
     phase: 'Prática Aplicada',
     desc: 'Vendas, negociação e gestão de conflitos em espanhol',
-    icon: '⚡',
   },
   {
     period: 'Mês 3',
     phase: 'Fluência Profissional',
     desc: 'Simulações avançadas, pitch e diferencial de carreira',
-    icon: '🏆',
   },
 ]

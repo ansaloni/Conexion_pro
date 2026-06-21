@@ -1,6 +1,8 @@
-import { MessageCircle } from 'lucide-react'
+import { MessageCircle, Phone, TrendingUp, Globe, BookOpen } from 'lucide-react'
 import { FOR_WHO_ITEMS } from '@/data/content'
 import { whatsappUrl } from '@/lib/utils'
+
+const ICONS = [Phone, TrendingUp, Globe, BookOpen]
 
 export default function ForWho() {
   return (
@@ -15,20 +17,25 @@ export default function ForWho() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {FOR_WHO_ITEMS.map((item, i) => (
-            <div
-              key={i}
-              className="card flex items-start gap-5 hover:shadow-card-lg transition-shadow duration-300"
-            >
-              <div className="text-4xl flex-shrink-0">{item.emoji}</div>
-              <div>
-                <h3 className="font-display font-bold text-navy text-lg mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{item.pain}</p>
+          {FOR_WHO_ITEMS.map((item, i) => {
+            const Icon = ICONS[i]
+            return (
+              <div
+                key={i}
+                className="card flex items-start gap-5 hover:shadow-card-lg transition-shadow duration-300"
+              >
+                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center">
+                  <Icon className="text-brand" size={22} />
+                </div>
+                <div>
+                  <h3 className="font-display font-bold text-navy text-lg mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.pain}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
 
         {/* Bridge statement */}

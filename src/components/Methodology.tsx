@@ -1,6 +1,6 @@
 import { CONEX_LETTERS, ROADMAP_STEPS } from '@/data/content'
 import { whatsappUrl } from '@/lib/utils'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
 export default function Methodology() {
   return (
@@ -89,14 +89,14 @@ export default function Methodology() {
                 <div key={i} className="flex flex-col items-center text-center px-2">
                   {/* Circle node */}
                   <div
-                    className={`relative z-10 w-16 h-16 rounded-full flex items-center justify-center text-2xl mb-4 shadow-card border-2
-                      ${i === 0 ? 'bg-white border-gray-300' : ''}
-                      ${i === 1 ? 'bg-brand/10 border-brand/40' : ''}
-                      ${i === 2 ? 'bg-navy/10 border-navy/40' : ''}
-                      ${i === 3 ? 'bg-gold/20 border-gold' : ''}
+                    className={`relative z-10 w-16 h-16 rounded-full flex items-center justify-center mb-4 shadow-card border-2 font-display font-bold text-lg
+                      ${i === 0 ? 'bg-white border-gray-300 text-gray-500' : ''}
+                      ${i === 1 ? 'bg-brand/10 border-brand/40 text-brand' : ''}
+                      ${i === 2 ? 'bg-navy/10 border-navy/40 text-navy' : ''}
+                      ${i === 3 ? 'bg-gold/20 border-gold text-gold' : ''}
                     `}
                   >
-                    {step.icon}
+                    {String(i + 1).padStart(2, '0')}
                   </div>
 
                   <span className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">
@@ -114,8 +114,8 @@ export default function Methodology() {
             {ROADMAP_STEPS.map((step, i) => (
               <div key={i} className="flex items-start gap-4">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full bg-navy/10 border border-navy/20 flex items-center justify-center text-xl flex-shrink-0">
-                    {step.icon}
+                  <div className="w-12 h-12 rounded-full bg-navy/10 border border-navy/20 flex items-center justify-center font-display font-bold text-navy text-sm flex-shrink-0">
+                    {String(i + 1).padStart(2, '0')}
                   </div>
                   {i < ROADMAP_STEPS.length - 1 && (
                     <div className="w-0.5 h-6 bg-gray-200 mt-1" />
@@ -145,7 +145,7 @@ export default function Methodology() {
             'Acompanhamento individual com suporte via WhatsApp',
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-3 text-gray-700 text-sm">
-              <span className="text-brand font-bold text-lg">✔</span>
+              <CheckCircle2 size={18} className="text-brand flex-shrink-0" />
               <span>{item}</span>
             </div>
           ))}
