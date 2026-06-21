@@ -17,7 +17,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full mb-6">
             <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
-            Curso online de espanhol para profissionais
+            Curso Atendimento LATAM
           </div>
 
           {/* H1 */}
