@@ -46,18 +46,13 @@ export default function Navbar() {
             </div>
           </a>
 
-          {/* Desktop nav links */}
-          <nav className="hidden lg:flex items-center gap-6">
+          {/* Desktop nav links — hidden when scrolled for minimal sticky header */}
+          <nav className={cn('hidden lg:flex items-center gap-6 transition-all duration-300', scrolled && 'opacity-0 pointer-events-none')}>
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className={cn(
-                  'text-sm font-medium transition-colors duration-200',
-                  scrolled
-                    ? 'text-gray-600 hover:text-navy'
-                    : 'text-white/80 hover:text-white'
-                )}
+                className="text-sm font-medium text-white/80 hover:text-white transition-colors duration-200"
               >
                 {link.label}
               </a>

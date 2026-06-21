@@ -82,19 +82,19 @@ export default function Pricing() {
                 {plan.ideal}
               </div>
 
-              {/* CTA */}
+              {/* CTA — large touch target for mobile */}
               <a
-                href={whatsappUrl(`Olá Karolaine! Tenho interesse no Plano ${plan.name} do Conexión Pro.`)}
+                href={whatsappUrl(`Olá Karolaine! Tenho interesse no Plano ${plan.name} do Conexión Pro. Vi na seção de investimento.`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
-                  'w-full flex items-center justify-center gap-2 font-bold px-6 py-4 rounded-full transition-all duration-200',
+                  'w-full flex items-center justify-center gap-2 font-bold px-6 py-5 rounded-full transition-all duration-200 active:scale-95 min-h-[56px]',
                   plan.highlight
                     ? 'bg-brand hover:bg-brand-hover text-white shadow-brand'
                     : 'bg-navy hover:bg-navy-light text-white'
                 )}
               >
-                <MessageCircle size={18} />
+                <MessageCircle size={20} />
                 {plan.cta}
               </a>
             </div>

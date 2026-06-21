@@ -214,4 +214,79 @@ export const FAQ_ITEMS = [
     q: 'Como funciona o suporte?',
     a: 'Você tem suporte VIP via WhatsApp para dúvidas pontuais e acompanhamento do seu progresso entre as aulas. A Karolaine responde pessoalmente.',
   },
+  {
+    q: 'É possível reagendar aulas por motivos de trabalho?',
+    a: 'Sim, com total flexibilidade. A Karolaine entende que profissionais têm demandas imprevistas — reuniões de última hora, viagens e projetos urgentes fazem parte da rotina corporativa. O reagendamento é feito diretamente pelo WhatsApp com pelo menos 24h de antecedência.',
+  },
+  {
+    q: 'Emitem nota fiscal? Consigo reembolso pela minha empresa?',
+    a: 'Sim. Mediante solicitação, é emitido recibo ou nota fiscal para fins de reembolso corporativo. Muitas empresas possuem políticas de incentivo à capacitação em idiomas — vale verificar com o seu RH.',
+  },
+  {
+    q: 'Como funciona a flexibilidade de horários?',
+    a: 'O agendamento é feito diretamente com a Karolaine pelo WhatsApp, com opções de horário adaptadas à sua agenda. Há disponibilidade em horários comerciais e pós-comerciais para atender tanto quem trabalha em regime presencial quanto remoto.',
+  },
+]
+
+export const TESTIMONIALS = [
+  {
+    name: 'Ana Carolina S.',
+    role: 'Analista de Comércio Exterior',
+    sector: 'Exportadora de Alimentos',
+    quote:
+      'Depois de 3 meses com a Karolaine, fui promovida a coordenadora bilíngue. O método C.O.N.E.X. me deu estrutura real para atender clientes do Chile e da Argentina sem travar. Vale cada centavo.',
+    stars: 5,
+  },
+  {
+    name: 'Rodrigo M.',
+    role: 'Customer Success Manager',
+    sector: 'SaaS B2B',
+    quote:
+      'Eu tinha espanhol de escola mas travava totalmente nas calls. Em 6 semanas já estava conduzindo reuniões com clientes mexicanos com confiança. A metodologia é diferente de tudo que já tentei.',
+    stars: 5,
+  },
+  {
+    name: 'Fernanda L.',
+    role: 'Representante Comercial',
+    sector: 'Indústria',
+    quote:
+      'A Karolaine entende o mercado corporativo de verdade. As simulações são idênticas ao meu dia a dia — atendimento, reclamação, negociação. Em 90 dias meu desempenho em espanhol mudou completamente.',
+    stars: 5,
+  },
+]
+
+export const COMPANY_SECTORS = [
+  '🌎 Comércio Exterior',
+  '🤝 Customer Success',
+  '📊 Vendas B2B',
+  '💻 Tecnologia',
+  '🏭 Indústria LATAM',
+  '👥 Recursos Humanos',
+]
+
+export const ROADMAP_STEPS = [
+  {
+    period: 'Semana 1–2',
+    phase: 'Diagnóstico',
+    desc: 'Avaliação de nível, fonética e vocabulário essencial',
+    icon: '🔍',
+  },
+  {
+    period: 'Mês 1',
+    phase: 'Base Bilíngue',
+    desc: 'Atendimento, e-mails e primeiras simulações de calls',
+    icon: '🌱',
+  },
+  {
+    period: 'Mês 2',
+    phase: 'Prática Aplicada',
+    desc: 'Vendas, negociação e gestão de conflitos em espanhol',
+    icon: '⚡',
+  },
+  {
+    period: 'Mês 3',
+    phase: 'Fluência Profissional',
+    desc: 'Simulações avançadas, pitch e diferencial de carreira',
+    icon: '🏆',
+  },
 ]

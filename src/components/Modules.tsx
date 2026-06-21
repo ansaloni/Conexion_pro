@@ -7,7 +7,7 @@ export default function Modules() {
         <div className="text-center mb-12">
           <span className="badge">Estrutura do programa</span>
           <h2 className="section-title mt-4">
-            6 Módulos Progressivos para Fluência Profissional
+            6 Módulos Progressivos de Espanhol para o Mercado Corporativo
           </h2>
           <div className="accent-bar mx-auto" />
           <p className="section-subtitle mx-auto text-center">

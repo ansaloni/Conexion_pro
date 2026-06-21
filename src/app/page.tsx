@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import ForWho from '@/components/ForWho'
+import Testimonials from '@/components/Testimonials'
 import Promise from '@/components/Promise'
 import ProblemSolution from '@/components/ProblemSolution'
 import About from '@/components/About'
@@ -12,6 +13,7 @@ import Pricing from '@/components/Pricing'
 import Closing from '@/components/Closing'
 import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
+import FloatingCTA from '@/components/FloatingCTA'
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ForWho />
+      <Testimonials />
       <Promise />
       <ProblemSolution />
       <About />
@@ -30,6 +33,7 @@ export default function Home() {
       <Closing />
       <FAQ />
       <Footer />
+      <FloatingCTA />
     </main>
   )
 }

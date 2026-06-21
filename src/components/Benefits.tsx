@@ -9,7 +9,7 @@ export default function Benefits() {
         <div className="text-center mb-12">
           <span className="badge">Benefícios</span>
           <h2 className="section-title mt-4">
-            O que você vai desenvolver no Conexión Pro
+            O que você vai desenvolver com Espanhol para Negócios
           </h2>
           <div className="accent-bar mx-auto" />
           <p className="section-subtitle mx-auto text-center">
