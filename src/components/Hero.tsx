@@ -29,7 +29,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl leading-relaxed">
-            Curso online com metodologia <strong className="text-gold">C.O.N.E.X.</strong> — simulações reais,
+            Metodologia <strong className="text-gold">C.O.N.E.X.</strong> — simulações reais,
             frases prontas e suporte individual para você se comunicar com confiança no mercado corporativo.
           </p>
 

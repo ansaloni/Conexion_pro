@@ -21,7 +21,7 @@ const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID
 export const metadata: Metadata = {
   title: 'Conexión Pro — Espanhol para Negócios e Mercado Corporativo',
   description:
-    'Curso online de espanhol para negócios focado em atendimento ao cliente, vendas e mercado corporativo LATAM. Metodologia C.O.N.E.X. com Karolaine Oliveira, formada pela UFMG.',
+    'Espanhol para negócios focado em atendimento ao cliente, vendas e mercado corporativo LATAM. Metodologia C.O.N.E.X. com Karolaine Oliveira, formada pela UFMG.',
   keywords: [
     'espanhol para negócios',
     'espanhol para o mercado corporativo',
