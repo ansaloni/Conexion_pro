@@ -1,7 +1,10 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  // Image optimization enabled (serves WebP/AVIF automatically)
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
 }
 
 export default nextConfig
