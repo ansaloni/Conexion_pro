@@ -33,7 +33,7 @@ export default function About() {
             {/* Credential badges */}
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { icon: GraduationCap, label: 'Letras/UFMG' },
+                { icon: GraduationCap, label: 'Letras UFMG' },
                 { icon: Building2, label: 'Multinacionais LATAM' },
                 { icon: MapPin, label: 'Vivência no Chile' },
               ].map(({ icon: Icon, label }) => (
@@ -58,8 +58,8 @@ export default function About() {
 
             <div className="space-y-4 text-white/80 leading-relaxed">
               <p>
-                Sou formada em <strong className="text-white">Letras/Espanhol pela UFMG</strong> — uma
-                das universidades mais renomadas do Brasil — e tenho experiência com ensino de idiomas
+                Sou formada em <strong className="text-white">Letras Espanhol pela UFMG</strong>, uma
+                das universidades mais renomadas do Brasil, e tenho experiência com ensino de idiomas
                 e atuação profissional em <strong className="text-white">atendimento bilíngue LATAM</strong>{' '}
                 em empresas multinacionais.
               </p>
@@ -72,7 +72,7 @@ export default function About() {
                 Com base nisso, desenvolvi uma metodologia focada em{' '}
                 <strong className="text-white">comunicação real no ambiente corporativo</strong>, para
                 ajudar profissionais a ganharem confiança para atender, vender, conversar e se
-                posicionar em espanhol — com objetividade e resultado.
+                posicionar em espanhol, com objetividade e resultado.
               </p>
             </div>
 

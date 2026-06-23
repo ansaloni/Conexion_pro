@@ -29,7 +29,7 @@ export default function Closing() {
         </p>
 
         <p className="text-white/60 text-base mb-10">
-          A próxima vaga bilíngue, o próximo cliente LATAM, a próxima oportunidade —
+          A próxima vaga bilíngue, o próximo cliente LATAM, a próxima oportunidade,
           <strong className="text-white"> você vai estar pronto(a)</strong>.
         </p>
 

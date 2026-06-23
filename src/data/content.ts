@@ -23,7 +23,7 @@ export const FOR_WHO_ITEMS = [
   },
   {
     title: 'Sente dificuldade com sotaques da América Latina',
-    pain: 'Chile, Argentina, México, Colômbia — cada país fala diferente, e você não sabe como se adaptar em tempo real.',
+    pain: 'Chile, Argentina, México e Colômbia, cada país fala diferente, e você não sabe como se adaptar em tempo real.',
   },
   {
     title: 'Já estudou, mas não consegue aplicar no dia a dia',
@@ -59,7 +59,7 @@ export const MODULES = [
   {
     number: '05',
     title: 'Comunicação Avançada e Sotaques',
-    desc: 'Diferenças entre países da LATAM, formalidade regional e condução de reuniões.',
+    desc: 'Diferenças entre países LATAM, formalidade regional e sotaques.',
     conex: 'O + N',
   },
   {
@@ -103,7 +103,7 @@ export const LEARN_ITEMS = [
   'Fazer e responder perguntas com clareza e objetividade',
   'Apresentar soluções e organizar o raciocínio em espanhol',
   'Lidar com reclamações e situações tensas com profissionalismo',
-  'Vender, negociar e participar de calls e reuniões',
+  'Vender, negociar e participar de calls.',
   'Adaptar sua comunicação para países e sotaques diferentes',
   'Criar e-mails, apresentações e até CV/LinkedIn em espanhol',
   'Desenvolver confiança real para usar o idioma no dia a dia',
@@ -161,8 +161,6 @@ export const PLANS = [
       'Material didático incluso',
       'Suporte VIP no WhatsApp',
       'Acesso aos bônus',
-      'Planner de Estudos C.O.N.E.X.',
-      'Planilha de Progresso Semanal',
     ],
     ideal: 'Quem quer evoluir com consistência, conciliando estudos e rotina de trabalho.',
     cta: 'Quero o Plano Essencial',
@@ -180,9 +178,7 @@ export const PLANS = [
       '8 aulas particulares mensais (2x/semana)',
       'Material didático incluso',
       'Suporte VIP no WhatsApp',
-      'Todos os 7 bônus inclusos',
-      'Todos os materiais + gravações',
-      'Workshop LinkedIn Bilíngue',
+      'Acesso aos bônus',
     ],
     ideal: 'Quem precisa de evolução acelerada para entrevistas, atendimento, vendas ou oportunidades internacionais.',
     cta: 'Quero o Plano Intensivo',
@@ -254,6 +250,7 @@ export const TESTIMONIALS = [
 export const COMPANY_SECTORS = [
   'Comércio Exterior',
   'Customer Success',
+  'Customer Experience',
   'Vendas B2B',
   'Tecnologia',
   'Indústria LATAM',

@@ -137,7 +137,7 @@ export default function Methodology() {
             Durante o curso, você vai praticar com:
           </h3>
           {[
-            'Simulações de atendimento e reuniões',
+            'Simulações de atendimento e reuniões com hispanos.',
             'Conversação aplicada ao mercado',
             'Correções personalizadas da professora',
             'Exercícios de comunicação intercultural',
